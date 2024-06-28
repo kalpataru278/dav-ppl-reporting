@@ -1,0 +1,114 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="Blank_A4_Landscape" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3aab3c78-3853-412d-be98-e46f5cfe6d4d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<dataset name="tabledataset" uuid="24968ce8-410c-4f3e-b643-46e78a6f62cf">
+		<query language="sql"><![CDATA[]]></query>
+		<field name="c1Key" class="java.lang.String"/>
+		<field name="c2Key" class="java.lang.String"/>
+		<field name="c1Value" class="java.lang.String"/>
+		<field name="c2Value" class="java.lang.String"/>
+	</dataset>
+	<parameter name="tbData" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<query language="sql"><![CDATA[]]></query>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch"/>
+	<pageHeader height="35" splitType="Stretch"/>
+	<columnHeader height="224" splitType="Stretch">
+		<element kind="component" uuid="bc82c411-7c74-4ffa-970c-f9c776082e32" x="0" y="0" width="802" height="224">
+			<component kind="table">
+				<datasetRun uuid="f10707ed-0143-43f6-964a-4fa1952d51d3" subDataset="tabledataset">
+					<dataSourceExpression><![CDATA[$P{tbData}]]></dataSourceExpression>
+				</datasetRun>
+				<column kind="single" uuid="62c4fcfa-620f-4202-9bc6-b13913469065" width="201">
+					<tableHeader height="30" rowSpan="1" style="Table_TH">
+						<element kind="staticText" uuid="91375592-6f8b-41f1-a4a9-31adc620d322" x="0" y="0" width="201" height="30">
+							<text><![CDATA[C1Key]]></text>
+						</element>
+					</tableHeader>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="ea996861-7824-40c1-915c-9573b941b9ba" x="0" y="0" width="201" height="30">
+							<expression><![CDATA[$F{c1Key}]]></expression>
+						</element>
+					</detailCell>
+					<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+				</column>
+				<column kind="single" uuid="f6747c6b-3826-4f3d-bffa-0f0bf19d1ec3" width="200">
+					<tableHeader height="30" rowSpan="1" style="Table_TH">
+						<element kind="staticText" uuid="3e09d3be-1300-4c36-a559-a5f844110194" x="0" y="0" width="200" height="30">
+							<text><![CDATA[C1Value]]></text>
+						</element>
+					</tableHeader>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="ede95d35-e446-420e-88ca-35174177d0b5" x="0" y="0" width="200" height="30">
+							<expression><![CDATA[$F{c1Value}]]></expression>
+						</element>
+					</detailCell>
+					<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+				</column>
+				<column kind="single" uuid="47154904-f895-468e-80c1-26eae9555f82" width="201">
+					<tableHeader height="30" rowSpan="1" style="Table_TH">
+						<element kind="staticText" uuid="01787b72-01b3-48d6-b316-ca93e6d049e6" x="0" y="0" width="201" height="30">
+							<text><![CDATA[C2Key]]></text>
+						</element>
+					</tableHeader>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="fcebeadd-c992-4dee-be4b-b1e6928bbc7e" x="0" y="0" width="201" height="30">
+							<expression><![CDATA[$F{c2Key}]]></expression>
+						</element>
+					</detailCell>
+					<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+				</column>
+				<column kind="single" uuid="e3f354a6-ba0c-4182-b86f-d1664e428395" width="200">
+					<tableHeader height="30" rowSpan="1" style="Table_TH">
+						<element kind="staticText" uuid="5588b299-a31c-48b6-8293-bf6da27f071d" x="0" y="0" width="200" height="30">
+							<text><![CDATA[C2Value]]></text>
+						</element>
+					</tableHeader>
+					<detailCell height="30" style="Table_TD">
+						<element kind="textField" uuid="702b2733-6b55-4b7b-a735-85203a23c9b0" x="0" y="0" width="200" height="30">
+							<expression><![CDATA[$F{c2Value}]]></expression>
+						</element>
+					</detailCell>
+					<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+				</column>
+			</component>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+			<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+			<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+			<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter height="45" splitType="Stretch"/>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
